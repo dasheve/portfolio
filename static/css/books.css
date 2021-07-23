@@ -1,0 +1,230 @@
+/* Font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+
+/* Styling starts here */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.4vw;
+}
+
+
+/* navigation bar styling */
+
+#home {
+    background: url("../images/books.jpg");
+    background-size: cover;
+    padding-bottom: 4rem;
+    background-attachment: fixed;
+    opacity: 200%;
+}
+
+.navbar {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb {
+    color: #ECDBBA;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background: transparent;
+}
+
+.breadcrumb .breadcrumb-item {
+    font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb a {
+    color: #50CB93;
+    font-size: 1.1rem;
+}
+
+.breadcrumb .active {
+    color: #ECDBBA;
+}
+
+.button .btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: #50CB93;
+    background: transparent;
+    transition: 0.3s all;
+    border: 0.1px solid transparent;
+}
+
+.button .btn i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.button .btn:hover {
+    border: 0.1px solid #50CB93;
+}
+
+.heading {
+    color: #ECDBBA;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.heading-para {
+    color: #ECDBBA;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.header-div .row {
+    margin: 4rem 0;
+    width: 50%;
+}
+
+.header-div .row .col-md-3 {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    position: relative;
+    height: 200px;
+}
+
+.header-div .row .col-md-3 img {
+    height: 100%;
+    width: 100%;
+    /* margin: 0 !important; */
+    transition: 0.7s all;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-div .row .col-md-3 img:hover {
+    height: 110%;
+    width: 110%;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
+}
+
+.header-div i {
+    transform: rotate(-90deg);
+    color: #ECDBBA;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.header-div i:hover {
+    color: #50CB93;
+}
+
+@media screen and (max-width:573px) {
+    #home {
+        height: 100vh;
+    }
+    .header-div {
+        margin-top: 7.5rem;
+    }
+    .header-div .row {
+        display: none;
+    }
+    .header-div i {
+        margin-top: 2rem;
+    }
+}
+
+
+/* content styling */
+
+#content {
+    padding: 3rem 0;
+    background-color: #50CB93;
+}
+
+#content .container .row {
+    margin: 2rem 0;
+}
+
+#content .container .row .col-md-4 {
+    margin: 2rem 0;
+}
+
+#content .row .card {
+    border: 2px solid #54436B;
+    border-radius: 8px;
+}
+
+#content .row .card-header {
+    background-color: #54436B;
+}
+
+#content .row .card-header h2 {
+    color: #ECDBBA;
+}
+
+#content .row .card-header p {
+    font-size: 1.2rem;
+    color: #ECDBBA;
+}
+
+#content .row .card-body p:first-child {
+    font-size: 1.1rem;
+}
+
+#content .row .card-body p:last-child {
+    font-size: 1.1rem;
+    color: #54436B;
+}
+
+
+/* footer styling */
+
+footer {
+    background-color: #54436B;
+    padding: 1rem 0 1rem 0;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .footer-content h4 {
+    margin: 1rem 0;
+}
+
+footer .footer-content a {
+    color: #ECDBBA;
+    padding: 0.3rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: 0.4s all;
+}
+
+footer .footer-content a:hover {
+    border-bottom: 2px solid #ECDBBA;
+}
+
+footer .footer-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #50CB93;
+}

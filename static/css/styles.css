@@ -1,0 +1,583 @@
+/* Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+
+/* Main styling starts here */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.4vw;
+    width: 100vw;
+    background-color: #50CB93;
+}
+
+
+/* Custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #ECDBBA;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #50CB93;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #54436B;
+}
+
+
+/* header styling */
+
+header {
+    background: url("../images/header-bg-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 4rem;
+    background-color: #50CB93;
+    box-shadow: inset 0 0 0 2000px #54436b8e;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.sticky {
+    background-color: #50CB93;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .7);
+}
+
+i.fa-bars {
+    color: #ECDBBA;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ECDBBA;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 2px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s all;
+    margin: 0.5rem 0.5rem;
+}
+
+.nav-link-scroll {
+    margin: 0 0.5rem;
+    padding: 0;
+}
+
+.navbar-nav a:hover {
+    color: rgba(220, 255, 242, 0.808);
+    border-bottom: 2px solid rgba(220, 255, 242, 0.808);
+}
+
+#home .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0 !important;
+    padding-top: 7rem;
+}
+
+#home .header-content img {
+    width: 10rem;
+    height: 10rem;
+}
+
+#home .header-content .self-name {
+    font-family: "Fondamento", cursive;
+    font-weight: 900;
+    color: #50CB93;
+    font-size: 6rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#home .header-content .header-para {
+    color: #ECDBBA;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 0.5;
+}
+
+#home .header-content .btn {
+    background-color: #50CB93;
+    color: #54436B;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: max-content;
+    border: 2px solid #50CB93;
+    transition: 0.3s all;
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+#home .header-content .btn:hover {
+    color: #50CB93;
+    border: 2px solid #50CB93;
+    background-color: transparent;
+}
+
+
+/* About Section Styling */
+
+#about {
+    padding: 4rem 0;
+}
+
+#about .row .img-col img {
+    height: 30rem;
+    padding: 3rem;
+}
+
+#about .row .img-col .social-content i {
+    margin: 0.8rem 0;
+    color: #54436B;
+    cursor: pointer;
+}
+
+#about .row .about-txt-col {
+    padding: 2rem;
+    background-color: #54436B;
+}
+
+.sec-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #50CB93;
+    margin: 1.6rem 0;
+    font-size: 2rem;
+}
+
+#about .row .about-txt-col h2:nth-child(2) {
+    color: #ECDBBA;
+}
+
+.type-1 {
+    color: #50CB93;
+}
+
+.typed-cursor {
+    color: #ECDBBA;
+}
+
+.sec-des {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ECDBBA;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+/* Skills section styling */
+
+#skills {
+    padding: 4rem 0;
+}
+
+#skills .row .content-col {
+    background-color: #54436B;
+    padding: 2rem;
+}
+
+#skills .row .content-col .skill-head-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#skills .row .content-col .skill-head-top i {
+    color: #50CB93;
+    padding: 0 !important;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 0.8rem !important;
+    transition: 0.3s all;
+    font-size: 2rem;
+}
+
+#skills .row .content-col .skill-head-top i:hover {
+    border-bottom-color: #50CB93;
+}
+
+sup {
+    right: 0.3rem;
+}
+
+#skills .row .skill-des {
+    margin-top: 2rem;
+}
+
+#skills .row .bars {
+    margin: 1.5rem 0;
+}
+
+#skills .row .bars .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#skills .row .bars .info span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #ECDBBA;
+    font-size: 1.20rem;
+}
+
+#skills .row .bars .info span .skill-icon {
+    margin-right: 0.5rem;
+    font-size: 1.15rem;
+}
+
+#skills .row .bars .line {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #796592;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#skills .row .bars .line div {
+    border: 2px solid #50CB93;
+    background-color: #50CB93;
+    height: 0.5rem;
+}
+
+#skills .row .bars .line .html {
+    width: 80%;
+}
+
+#skills .row .bars .line .css {
+    width: 50%;
+}
+
+#skills .row .bars .line .js {
+    width: 50%;
+}
+
+#skills .row .bars .line .python {
+    width: 60%;
+}
+
+#skills .row .bars .line .java {
+    width: 30%;
+}
+
+#skills .row .col-md-6:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .row .col-md-6:last-child img {
+    width: 95%;
+}
+
+
+/* Interests Section Styling */
+
+#interests {
+    padding: 0rem 0 2rem 0;
+    background-color: #54436B;
+}
+
+#interests .container {
+    padding: 2rem;
+}
+
+#interests .container .int-head {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    font-size: 2.5rem;
+}
+
+#interests .content-col {
+    background-color: #54436B;
+    position: relative;
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+#interests .content-col img {
+    width: 100% !important;
+}
+
+#interests .content-col:hover {
+    background-color: #5f4b77;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#interests .int-quote {
+    font-family: 'Fondamento', cursive;
+    color: #ECDBBA;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+#interests .row .col-md-4 img {
+    width: 92%;
+}
+
+#interests .row .col-md-4 i {
+    margin-right: 1rem;
+}
+
+#interests .row .col-md-4 .int-des {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #50CB93;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#interests .content-col .int-link {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    transition: 0.2s all;
+    visibility: hidden;
+    font-size: 1.4rem;
+}
+
+#interests .content-col .int-link i {
+    color: #50CB93;
+    border-bottom: 2px solid #5f4b77;
+    padding: 0.2rem;
+}
+
+#interests .content-col .int-link i:hover {
+    border-bottom: 2px solid #ECDBBA;
+}
+
+#interests .content-col:hover .int-link {
+    visibility: visible;
+    text-decoration: none;
+}
+
+#interests .fas.fa-play-circle {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#interests .fas.fa-pause-circle {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+/* contact section styling */
+
+#contact {
+    padding: 4rem 0 2rem 0;
+    background-color: #50CB93;
+}
+
+#contact .row {
+    margin: 4rem 0;
+}
+
+#contact .contact-head {
+    color: #54436B;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#contact .row .col-md-5 {
+    padding: 0 3rem;
+}
+
+#contact .row .col-md-5 .social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#contact .row .col-md-5 .social-container .content {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    line-height: 0.5;
+}
+
+#contact .row .col-md-5 .social-container .content h4 {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#contact .row .col-md-5 .social-container .content p {
+    font-size: 1rem;
+    color: #54436B;
+    cursor: pointer;
+    padding-bottom: 0.3rem;
+    transition: 0.5 all;
+}
+
+#contact .row .col-md-5 .social-container .icon {
+    padding: 0px !important;
+    margin-bottom: 1rem;
+}
+
+#contact .row .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input,
+#contact form textarea {
+    background-color: #50CB93;
+    border: 2px solid #212529;
+    margin: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: #000;
+    transition: 0.3s all;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact form .details input {
+    width: 50%;
+}
+
+#contact form button {
+    margin: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+}
+
+#contact .modal .modal-header span i {
+    font-size: 1rem;
+    color: #212529;
+}
+
+#contact .modal .modal-title {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#contact .modal .modal-body p {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* footer styling */
+
+footer {
+    background-color: #54436B;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    color: #ECDBBA;
+}
+
+footer .container .icons {
+    margin-bottom: 1rem;
+}
+
+footer .container .icons a {
+    margin: 0rem 0.5rem;
+    font-size: 1.5rem;
+    color: #ECDBBA;
+    border: 2px solid transparent;
+    transition: 0.3s all;
+}
+
+footer .container .icons a:hover {
+    border-bottom-color: #ECDBBA;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:770px) {
+    #skills {
+        padding-bottom: 1rem !important;
+    }
+    #skills .row .col-md-6:last-child {
+        margin: 1rem 0;
+    }
+    #interests .row .col-md-4 {
+        margin: 1rem 0;
+    }
+    #about {
+        padding: 2rem 0 3rem 0;
+    }
+    #home .header-content {
+        margin-top: 6rem;
+    }
+    #home .header-content .self-name {
+        font-size: 4rem;
+    }
+    #contact .row .col-md-5 {
+        padding: 0 3rem;
+    }
+    .nav-link-scroll {
+        margin: 0.5rem 0.5rem;
+        padding: 0.2rem;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    .navbar-nav .nav-item a {
+        text-align: right;
+        padding-right: 0.8rem;
+        font-size: 1.3rem;
+    }
+}
