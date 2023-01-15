@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     var options = {
-        strings: ["Student", "Programmer", "Blogger", "Science Geek"],
+        strings: ["Student", "Programmer","Science Geek","Bibliophile"],
         typeSpeed: 40,
         loop: true,
         typeSpeed: 100,
